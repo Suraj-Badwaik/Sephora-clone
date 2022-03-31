@@ -1,0 +1,137 @@
+.box{
+    padding: 15px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+
+.main-payment-section{
+    gap: 32px;
+    grid-template-columns: 1fr 300px;
+    display: grid;
+}
+
+
+
+#header{
+   
+    text-align: center;
+    font-size: 40px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+#mainheading>h1{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.first-Payment-section-1{
+    width: 100%;
+    border: 1px solid rgb(230, 227, 227);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.second-payment-section-2{
+    width: 100%;
+    border: 1px solid rgb(230, 227, 227);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px 15px;
+}
+
+.Shipping-Details>div>input{
+    padding: 14px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(214, 212, 212);
+}
+.Shipping-Details>p{
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.SAC>input{
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 190px;
+   padding: 16px 20px;
+   background-color: black;
+   color: white;
+   border-radius: 50px;
+   margin-bottom: 15px;
+}
+
+#checkoutBtn{
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(214, 208, 208);
+    color: rgb(68, 67, 67);
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+/* =========================== */
+/* =========================== */
+/* =========================== */
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px 30px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
