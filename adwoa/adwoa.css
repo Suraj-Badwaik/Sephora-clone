@@ -1,0 +1,23 @@
+<style>
+      * {
+        font-family: Arial, Helvetica, serif;
+      }
+      #menu {
+        border: 1px solid red;
+        width: 200px;
+        margin-left: 150px;
+      }
+      #outer {
+        border: 1px solid blue;
+        display: flex;
+      }
+      #container {
+        border: 1px solid red;
+        margin-left: 60px;
+        width: 70%;
+        /* box-sizing: border-box; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+    </style>

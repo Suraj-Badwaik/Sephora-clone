@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, serif;
+      }
+      div {
+        /* border: 1px solid blue; */
+      }
+      h1 {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      img {
+        cursor: pointer;
+      }
+      p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      h5:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      h6:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #main {
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+      #main > div:nth-child(2) {
+        /* border: 1px solid red; */
+        display: flex;
+        margin-top: 220px;
+        justify-content: space-around;
+        text-align: center;
+      }
+      #big {
+        font-size: 60px;
+      }
+      .six {
+        /* border: 1px solid green; */
+        height: 170px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 40px;
+      }
+      #four {
+        height: 400px;
+      }
+
+      .six > div {
+        height: 100%;
+        width: 15%;
+        /* border: 1px solid red; */
+        margin: auto;
+      }
+      .six > div > h6 {
+        line-height: 10px;
+        margin-top: 5px;
+      }
+      .six > div > p {
+        line-height: 10px;
+        margin-top: 10px;
+      }
+      #two > div {
+        width: 49%;
+        justify-content: center;
+      }
+      #beauty {
+        margin-top: 50px;
+        justify-content: center;
+      }
+      #button {
+        cursor: pointer;
+        margin: auto;
+        border-radius: 20px;
+        height: 25px;
+        margin-top: 20px;
+        border: 2px solid black;
+        width: 130px;
+        font-size: small;
+        line-height: 20px;
+      }
+      #four > img {
+        margin: auto;
+      }
+      #smallfour {
+        margin-bottom: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    // top navbar
+
+    <div id="main">
+      <img
+        src="https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-03-25-hp-slide-slotting-bestsellers-desktop-us-slice.jpeg?imwidth=1200"
+        alt=""
+      />
+      <!-- <div>
+        <h1 id="big">BEST SELLING BEAUTY</h1>
+        <h2>SHOP NOW</h2>
+      </div>
+      <div>
+        <h1>SKINCARE</h1>
+        <h1>MAKEUP</h1>
+        <h1>FRAGRANCE</h1>
+      </div> -->
+    </div>
+
+    <h1>Just Dropped</h1>
+    <div class="six">
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2575322-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Danessa Myricks</h6>
+        <h6>Beauty</h6>
+        <p>Yummy Skin Glow</p>
+        <p>Serum Primer</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2570489-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Tarte</h6>
+        <p>Maracuja Juicy Lip</p>
+        <p>Plump</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2527729-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
+          alt=""
+        />
+        <h6>ILIA</h6>
+        <p>True Skin Medium</p>
+        <p>Coverage Serum</p>
+        <p>Foundation with...</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2554673-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>limited edition</h6>
+        <h6>Too Faced</h6>
+        <p>Too Femme Ethereal</p>
+        <p>Eyeshadow Palette</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2457950-main-zoom.jpg?imwidth=135&pb=clean-planet-positive-badge-2021&imwidth=97"
+          alt=""
+        />
+        <h6>only at sephora</h6>
+        <h6>SEPHORA</h6>
+        <h6>COLLECTION</h6>
+        <p>All Day Hydrator</p>
+        <p>Moisturizer with...</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2517142-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>KVD Beauty</h6>
+        <p>Good Apple Lightweight</p>
+        <p>Full-Coverage</p>
+        <p>Concealer</p>
+      </div>
+    </div>
+    <div class="six" id="two">
+      <div>
+        <img
+          src="https://www.sephora.com/contentimages/homepage/012120/Homepage/DesktopMweb/2020-01-27-hp-beauty-offer-generic-urgency-us-ca-d-slice.jpg?imwidth=482"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/contentimages/homepage/032922/Homepage/DesktopMweb/2022-3-30-hp-marketing-banner-glow-recipe-watermelon-spf-us-ca-desktop-slice.jpeg?imwidth=482"
+          alt=""
+        />
+      </div>
+    </div>
+    <h1>Selling Fast</h1>
+    <div class="six">
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2315935-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
+          alt=""
+        />
+        <h5>Only at Sephora</h5>
+        <h5>The INKEY List</h5>
+        <p>Polyglutamic Acid</p>
+        <p>Hydrating Serum</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2116333-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Only at Sephora</h5>
+        <h5>bite Beauty</h5>
+        <p>Power Move Creamy</p>
+        <p>Matte Lip Crayon</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s1914472-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Supergoop!</h5>
+        <p>Unseen Suncreen</p>
+        <p>SPF 40 PA+++</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2191252-main-zoom.jpg?imwidth=135&pb=allure-clean-2020&imwidth=97"
+          alt=""
+        />
+        <h5>Stila</h5>
+        <p>Stay All Day®</p>
+        <p>Waterproof Liquid</p>
+        <p>Liner</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2199370-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>only at Sephora</h5>
+        <h5>K18 Biometric</h5>
+        <h5>Hairscience</h5>
+        <p>Mini Leave-in</p>
+        <p>Repair Hair Mask</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s1221084-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Josine Maran</h5>
+        <p>Whipped Argan Oil</p>
+        <p>Butter</p>
+      </div>
+    </div>
+    <h1>Value Sets</h1>
+    <div class="six">
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2554947-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Sephora Favorites</h5>
+        <p>Plump and Hydrate</p>
+        <p>Kit</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2176063-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Limited Edition</h6>
+        <h5>Marc Jacobs</h5>
+        <h5>Fragrances</h5>
+        <p>Mini Daisy Perfume</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2498509-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Limited Edition</h6>
+        <h5>Fenty Beauty by</h5>
+        <h5>Rihanna</h5>
+        <p>Lil' Bronze Duo</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2203552-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Limited edition</h6>
+        <h5>Natasha Denona</h5>
+        <p>pastel Eyeshadow</p>
+        <p>Palette</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2512556-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Limited Edition</h6>
+        <h5>Bobbi Brown</h5>
+        <p>Mini Long-Wear</p>
+        <p>Shadow Stick Trip</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2513489-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>limited edition</h6>
+        <h5>Moroccanoil</h5>
+        <p>Hydrating Shampoo &</p>
+        <p>Conditioner</p>
+      </div>
+    </div>
+    <h1>Chosen For You</h1>
+    <div class="six">
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2419786-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Charlotte Tilbury</h5>
+        <p>Hollywood Flawless</p>
+        <p>Filter</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2568152-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
+          alt=""
+        />
+        <h5>Make Up For Ever</h5>
+        <p>HD Skin</p>
+        <p>Longwear Foundation</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2514156-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>Only at sephora</h6>
+        <h5>Rare Beauty by Selena</h5>
+        <h5>Gomez</h5>
+        <p>Soft Pinch Blush</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h6>only at Sephora</h6>
+        <h5>HUDA Beauty</h5>
+        <p>Cheeky Tint Cream</p>
+        <p>Blush Stick</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2514586-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>NARS</h5>
+        <p>Light Reflecting</p>
+        <p>Advanced Skincare</p>
+        <p>Foundation</p>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s1925577-main-zoom.jpg?imwidth=135&imwidth=97"
+          alt=""
+        />
+        <h5>Tatcha</h5>
+        <p>The Dewy Skin Cream</p>
+        <p>Plumping & Hydrating</p>
+        <p>Moisturizer</p>
+      </div>
+    </div>
+    <h1>Beauty Insider Rewards</h1>
+    <div class="six" id="smallfour">
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2496248-main-zoom.jpg?imwidth=135"
+          alt=""
+        />
+        <h5>Kiehl's Since 1851</h5>
+        <p>Dark Spot Correcting</p>
+        <p>Serum</p>
+        <h6>100 points</h6>
+        <div id="button">Sign in to access</div>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2566859-main-zoom.jpg?imwidth=135"
+          alt=""
+        />
+        <h5>Clinique</h5>
+        <p>Acne Solutions</p>
+        <p>clearing gel</p>
+        <h6>100 points</h6>
+        <div id="button">Sign in to access</div>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2188365-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=135"
+          alt=""
+        />
+        <h5>Tarte</h5>
+        <p>Drink of H2O</p>
+        <p>Moisturizer</p>
+        <h6>100 points</h6>
+        <div id="button">Sign in to access</div>
+      </div>
+      <div>
+        <img
+          src="https://www.sephora.com/productimages/sku/s2574622-main-zoom.jpg?imwidth=135"
+          alt=""
+        />
+        <h5>Bumble and bumble</h5>
+        <p>Hairdresser's oil</p>
+        <p>Treatment Lotion</p>
+        <h6>100 points</h6>
+        <div id="button">Sign in to access</div>
+      </div>
+    </div>
+    <h1>More Beauty For You</h1>
+    <div class="six" id="four">
+      <img
+        src="https://www.sephora.com/contentimages/homepage/080321/Homepage/DesktopMweb/2021-08-13-hp-bot-nav-q3-fragrance-quiz-d-us-slice.jpeg?imwidth=221"
+        alt=""
+      />
+      <img
+        src="https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-3-28-hp-bot-nav-highlighters-sc-sku-launches-us-desktop-slice.jpeg?imwidth=221"
+        alt=""
+      />
+      <img
+        src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-22-hp-bot-nav-feb-lip-story-us-slice.jpeg?imwidth=221"
+        alt=""
+      />
+      <img
+        src="https://www.sephora.com/contentimages/homepage/020221/Homepage/DesktopMweb/2021-02-01-hp-botnav-bi-rewards-generic-refresh-us-ca-d-slice.jpeg?imwidth=221"
+        alt=""
+      />
+    </div>
+    <div class="six" id="beauty">
+      <img
+        src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-13-hp-bottom-evergreen-banner-conv-hub-same-day-desktop-us-ca-slice.jpeg?imwidth=980"
+        alt=""
+      />
+    </div>
+    //BOTTOM NAV BAR
+  </body>
+</html>
