@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Brush</title>
+    <style>
+        *{
+            font-family: Helvetica;
+            margin-left: 10px;
+        }
+        hr{
+            height: 1px;
+            background-color: rgb(226, 221, 221);
+            border: none;
+        }
+        #Container{
+            display: flex;
+            font-size: 14px;
+        }
+        #prod{
+            margin-top: 40px;
+            margin-left:20px;
+            display: grid;
+            grid-auto-flow: row;
+            height: 40px;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: space-evenly;
+            grid-gap: 7px 7px;
+        }
+        #prod>div{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 5px;
+                width: 200px;
+                padding: 5px;
+                margin-left: -2px;
+                justify-items: center;
+        }
+        #item{
+            margin-top: 150px;
+            margin-left: -1100px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            line-height: 15px;
+            
+        }
+        select{
+            width: 200px;
+            margin: 10px;
+            font-weight: bold;
+            border: none;
+        }
+        div:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #prod>div>img{
+            float: right;
+            margin-top: -38px;
+        }
+        .bimg{
+            height: 30px;
+            width: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="Container">
+    <div>
+        <p>Tools & Brushes</p>
+        <h2>Tools & Brushes</h2>
+        <p>Brushes & Applicators (256)</p>
+        <p>Hair Tools (163)</p>
+        <p>Beauty Tools (131)</p>
+        <p>Beauty Accessories (12)</p>
+        <p>Value & Gift Sets (15)</p><br>
+        <p>Filter</p>
+        <select><option>Sale</option></select><br>
+        <hr>
+        <select><option>Brand</option></select><br><hr>
+        <select><option>Rating</option></select><br><hr>
+        <select><option>Brand</option></select><br><hr>
+        <select><option>Concerns</option></select><br><hr>
+        <select><option>new</option></select><br><hr>
+        <select><option>Shopping Preferences</option></select><br><hr>
+        <select><option>Skin Type</option></select><br><hr>
+        <select><option>Age Range</option></select><br><hr>
+        <select><option>Size</option></select><br><hr>
+        <select><option>Ingredient Preferences</option></select><br><hr>
+        <select><option>Briste Type</option></select><br><hr>
+        <select><option>Type</option></select><br><hr>
+        <select><option>Formulation</option></select><br><hr>
+        <select><option>Coverage</option></select><br><hr>
+        <select><option>Hair Type</option></select><br><hr>
+        <select><option>Benifits</option></select><br><hr>
+        <select><option>Price Range</option></select><br><hr>
+        <select><option>Finish</option></select><br><hr>
+        <select><option>Color Family</option></select><br><hr>
+    </div>
+    <div id="prod">
+        <div>
+            <p>New</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg">
+        </div>
+        <div>
+            <p>Bestseller</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg">
+        </div>
+        <div>
+            <p>Srphora Collection</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sephoracollection.svg">
+        </div>
+        <div>
+            <p>Tolls & Brushes</p>
+        <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/allure.svg">
+    </div>
+    </div>
+    
+    <div id="item">
+         <div>
+            <img src="https://www.sephora.com/productimages/sku/s2459774-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Dr.Dennis Gross Skincare</h5>
+            <p>DRx SpectraLite™ BodyWare Pro</p>
+            <h4>$435.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2471886-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=230">
+            <h5>SEPHORA COLLECTION</h5>
+            <p>Black Obsidian Face and Body Gua Sha</p>
+            <h4>$14.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2471878-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=230">
+            <h5>SEPHORA COLLECTION</h5>
+            <p>Double-Ended Textured Facial Roller</p>
+            <h4>$24.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2113553-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Mount Lai</h5>
+            <p>Gua Sha Facial Lifting Tool</p>
+            <h4>$28.00-$38.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2569713-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>CANOPY</h5>
+            <p>The Canopy Humidifier Starter Set</p>
+            <h4>$28.00-$150.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2533636-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>StriVectin</h5>
+            <p>Peptight™ Tightening Neck Serum Roller</p>
+            <h4>$79.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2561447-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>FaceGym</h5>
+            <p>Faceshot™ Electric Microneedling Device + Vitamin Ampoules</p>
+            <h4>$80.00-$250.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2194330-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>StackedSkincare</h5>
+            <p>Dermaplaning Tool Refill Trio</p>
+            <h4>$24.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2194256-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>StackedSkincare</h5>
+            <p>Dermaplaning Tool/p>
+            <h4>$75.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2502995-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>FaceGym</h5>
+            <p>Multi-Sculpt High-Performance Gua Sha</p>
+            <h4>$60.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1771260-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Slip</h5>
+            <p>Silk Pillowcase - Standard/Queen</p>
+            <h4>$85.00-89.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2109718-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Dr. Dennis Gross Skincare</h5>
+            <p>DRx SpectraLite™ FaceWare Pro</p>
+            <h4>$435.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2065969-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>LightStim</h5>
+            <p>Lightstim® for Acne</p>
+            <h4>$169.00</h4>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
+        
