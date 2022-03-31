@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Sephora</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@401;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- POPUP SCREEN -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You're Order Has Been Successfully Placed</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="box">
+        <h1 id="header">SEPHORA</h1>
+    </div>
+
+    <main>
+        <div class="BasketPage">
+            <div class="main-payment-section">
+
+                <div class="Payment-section  first-Payment-section">
+                    <div id="mainheading">
+                        <h1>checkout</h1>
+                    </div>
+                    <hr>
+                    <form id="submit">
+                        <div class="Shipping-Details">
+                            <p>Shipping Address</p>
+                            <div class="inputs">
+                                <input type="text" name="firstname" id="FName" placeholder="First name *">
+                                <input type="text" name="lastname" id="LName" placeholder="Last name *">
+                                <input type="text" name="mobile" id="phone" placeholder="Phone *">
+                            </div>
+                            <div>
+                                <input type="text" name="address" id="address" placeholder="Street Address *">
+                            </div>
+                            <div>
+                                <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code*">
+                            </div>
+
+                        </div>
+
+
+                        <div class="Shipping-Details">
+                            <p>Payment Method</p>
+
+
+                            <h3>Add Your Debit Card details</h3>
+                            <div class="inputs">
+                                <input type="text" name="card" id="card" placeholder="Enter Card Number*">
+                                <input type="text" name="expiry" id="expiry" placeholder="Enter Expiry*">
+                                <input type="text" name="cvv" id="cvv" placeholder="Enter CVV*">
+                            </div>
+
+                            <div class="SAC">
+                                <input type="submit">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+
+                <div class="Payment-section">
+                    <div class="first-Payment-section-1">
+                        <div class="order-summary">
+                            <div class="order-details">
+                                <div class="payment subtotal">
+                                    <span>Merchandise Subtotal</span>
+                                    <strong id="subtotal">$ 0</strong>
+                                </div>
+                                <div class="payment tax">
+                                    <span>Estimated Tax</span>
+                                    <strong id="tax">TBD</strong>
+                                </div>
+                                <div>
+                                    <hr>
+                                </div>
+                                <div class="payment total">
+                                    <span>Estimated Total</span>
+                                    <div id="total"><strong>$ 0</strong></div>
+                                </div>
+
+                                <div class="payment Ship-tax">
+                                    <p>Shipping & taxes calculated during checkout</p>
+                                </div>
+                            </div>
+                            <div class="place-button">
+                                <button id="checkoutBtn">Place Order</button>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="second-payment-section-2">
+                        <div class="Promo-code-details">
+                            <div class="view-offers">
+                                <p>view featured offers <img style="width: 10px; height: 8px;"
+                                        src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt=""></p>
+                            </div>
+                            <div class="enterPromoCode">
+                                <input type="text" name="promo" id="promo" placeholder="Promo or Reward code">
+                                <button id="apply">Apply Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+
+<script src="cart.js"></script>
+<script src="checkout.js"></script>
