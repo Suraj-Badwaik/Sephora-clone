@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top_nav</title>
+</head>
+<style>
+    *{
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+    }
+#top_img{
+    background-color: #E00585;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#top_img>p{
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: small;
+    
+}
+#top_img>img{
+    float: right;
+}
+#search{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 25px;
+    height: auto;
+}
+#logo{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+}
+div>input{
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F6F6F8;
+    color: black;
+}
+.icon{
+    margin-top: 20px;
+    padding-left: 35px;
+    background: url("https://cdn-icons-png.flaticon.com/512/54/54481.png") no-repeat left;
+    padding: auto;
+    background-color: #f6f6f6;
+    background-size: 20px;
+}
+#search>div{
+    padding-left: 25px;
+}
+#community{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#community>div{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+#community>div>p{
+    text-align: center;
+    font-size: small;
+    float: left;
+    padding-left: 15px;
+   
+}
+#community>div>img{
+    padding-left: 20px;
+}
+#cart{
+    
+    margin-left: 80px;
+}
+#cart>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+#cart>div>img{
+    padding-left: 15px;
+}
+#black_nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding-left: 11%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}#black_nav>div{
+    padding-left:30px ;
+}
+#black_nav>div>a{
+    text-decoration: none;
+    color: azure;
+}
+</style>
+<body>
+    <div id="top_img">
+        <p><strong>Take 50% off++</strong> Oh snap! Get major savings on your favorite beauty. Plus, free shipping on all orders <br> with code <strong> FREESHIP. Shop Now ▸</strong></p>
+        <img src="https://www.sephora.com/contentimages/homepage/081721/Homepage/DesktopMweb/2021-08-29-hp-top-banner-project-kickball-d-us-slice.jpeg?imwidth=612" alt="top_img">
+    </div>
+    <div id="search">
+        <div id="logo"><img src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div id="box"><input type="text" class="icon" placeholder="Search"></div>
+        <div id="community"> 
+            <div><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt=""><p><strong>Stores & Services</strong> <br> Choose Your Store</p></div>
+            <div><img src="https://www.sephora.com/img/ufe/icons/community.svg" alt=""><p>Community</p></div>
+            <div><a href="#"> <img src="https://www.sephora.com/img/ufe/icons/me.svg" alt=""><p>Sign In</p></a></div>
+            
+            <div id="cart">
+                <div><img style="height: 40px; width: 40px;" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/left-speech-bubble_1f5e8.png" alt="chat"></div>
+                <div><img src="https://cdn-icons-png.flaticon.com/32/1216/1216575.png" alt="heart"></div>
+                <div><img  src="https://cdn-icons-png.flaticon.com/32/481/481383.png" alt="basket"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="black_nav">
+        <div><a href="#"> New</a></div>
+        <div> <a href="#">Brands</a> </div>
+        <div><a href="#"> Makeup</a></div>
+        <div><a href="#"> Skincare</a></div>
+        <div><a href="#"> Hair</a></div>
+        <div><a href="#"> Fragrance</a></div>
+        <div><a href="#"> Tools & Brushes</a></div>
+        <div><a href="#"> Bath & Body</a></div>
+        <div><a href="#"> Mini Size</a></div>
+        <div><a href="#"> Gifts</a></div>
+        <div><a href="#"> Beauty Under $20</a></div>
+        <div><a href="#"> Sale & Offers</a></div>
+    </div>
+
+    
+</body>
+</html>
