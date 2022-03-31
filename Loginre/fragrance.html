@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance</title>
+    <style>
+        *{
+            font-family: Helvetica;
+            margin-left: 10px;
+        }
+        hr{
+            height: 1px;
+            background-color: rgb(226, 221, 221);
+            border: none;
+        }
+        #Container{
+            display: flex;
+            font-size: 14px;
+        }
+        #prod{
+            margin-top: 40px;
+            margin-left:20px;
+            display: grid;
+            grid-auto-flow: row;
+            height: 100px;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: space-evenly;
+            grid-gap: 7px 7px;
+        }
+        #prod>div{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 5px;
+                width: 200px;
+                padding: 5px;
+                margin-left: -2px;
+                justify-items: center;
+        }
+        #item{
+            margin-top: -900px;
+            margin-left: 230px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            line-height: 15px;
+            
+        }
+        select{
+            width: 200px;
+            margin: 10px;
+            font-weight: bold;
+            border: none;
+        }
+        div:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        div{
+            white-space: inherit;
+        }
+        #prod>div>img{
+            float: right;
+            margin-top: -38px;
+            white-space: normal;
+        }
+        .bimg{
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+    <div>
+        <p>Fragrance</p>
+        <h2>Fragrance</h2>
+        <p>Women (933)</p>
+        <p>Men (296)</p>
+        <p>Value & Gift Sets (105)</p>
+        <p>Candles & Home Scents (264)</p>
+        <p>Shop by Fragrance Family (833)</p>
+        <p>Vegan (172)</p>
+        <p>Mini Size (303)</p><br>
+        <p>Filter</p>
+        <select><option>Sale</option></select><br>
+        <hr>
+        <select><option>Brand</option></select><br><hr>
+        <select><option>Rating</option></select><br><hr>
+        <select><option>Concerns</option></select><br><hr>
+        <select><option>New</option></select><br><hr>
+        <select><option>Formulation</option></select><br><hr>
+        <select><option>Ingredient Preferences</option></select><br><hr>
+        <select><option>Age Range</option></select><br><hr>
+        <select><option>Skin Type</option></select><br><hr>
+        <select><option>Fragrance Family</option></select><br><hr>
+        <select><option>Shopping Preferences</option></select><br><hr>
+        <select><option>Fragrance Type</option></select><br><hr>
+        <select><option>Size</option></select><br><hr>
+        <select><option>Hair Type</option></select><br><hr>
+        <select><option>Price Range</option></select><br><hr>
+    </div>
+    <div id="prod">
+        <div>
+            <p>New</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg">
+        </div>
+        <div>
+            <p>Bestseller</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg">
+        </div>
+        <div>
+            <p>Clean</p>
+            <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg">
+        </div>
+        <div>
+            <p>Vegan</p>
+        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg">
+    </div>
+        <div>
+            <p>Mini Size</p>
+            <img src="https://www.sephora.com/contentimages/meganav/icons/Hairtype_Curly.svg">
+        </div>
+        <div>
+            <p>Fragrance Quiz</p>
+            <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg" alt="">
+       </div>
+        <div>
+            <p>Clean Fragrance Guide</p>
+            <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg" alt="">
+        </div>
+        <div>
+            <p>Fragrance Notes Guide</p>
+            <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrances_guide.svg" alt="">
+       </div>
+        <div>
+            <p>Niche Fragrances</p>
+            <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/niche_fragrances.svg" alt="">
+        </div>
+        <div>
+            <p>Best Perfume $45 and Under</p>
+            <img class="bimg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/under_45.svg" alt="">
+        </div>
+        </div>  
+    </div>
+    
+    <div id="item">
+    
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1377159-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Viktor&Rolf</h5>
+            <p>Flowerbomb</p>
+            <h4>$30.00-$220.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1930759-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Sol de Janeiro</h5>
+            <p>Brazilian Crush Cheirosa ’62 Bum Bum Hair & Body Fragrance Mist</p>
+            <h4>$20.00-$35.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2554947-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Sephora Favorites</h5>
+            <p>Deluxe Perfume Sampler Set</p>
+            <h4>$75.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1237379-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>CHANEL</h5>
+            <p>CHANCE EAU TENDRE Eau de Toilette</p>
+            <h4>$72.00-$125.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2543767-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Maison Margiela</h5>
+            <p>'REPLICA' Memory Box Perfume Set</p>
+            <h4>$35.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2249688-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Valentino</h5>
+            <p>Donna Born In Roma Eau de Parfum</p>
+            <h4>$32.00-$138.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1688852-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Yves Saint Laurent</h5>
+            <p>Black Opium Eau de Parfum</p>
+            <h4>$29.00-$162.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2249738-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Yves Saint Laurent</h5>
+            <p>Libre Eau De Parfum</p>
+            <h4>$30.00-$180.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s513168-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>CHANEL</h5>
+            <p>COCO MADEMOISELLE Eau de Parfum</p>
+            <h4>$90.00-$146.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2176063-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Marc Jacobs Fragrances</h5>
+            <p>Mini Daisy Perfume Set</p>
+            <h4>$25.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2461812-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Sol de Janeiro</h5>
+            <p>Brazilian Crush Cheirosa ’40 Bom Dia Hair & Body Fragrance Mist</p>
+            <h4>$20.00-$35.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s1001098-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>CHANEL</h5>
+            <p>CHANCE EAU FRAÎCHE Eau de Toilette</p>
+            <h4>$72.00-$125.00</h4>
+        </div>
+        <div>
+            <img src="https://www.sephora.com/productimages/sku/s2551364-main-zoom.jpg?imwidth=270&imwidth=230">
+            <h5>Maison Margiela</h5>
+            <p>'REPLICA' Mini Coffret Set</p>
+            <h4>$68.00</h4>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
+        
