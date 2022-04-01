@@ -1,0 +1,80 @@
+body{
+    padding-top: 50px;
+    background-color: black;
+    color: azure;
+}
+.btm{
+color: azure;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+padding-left: 10%;
+padding-right: 10%;
+
+}
+.btm>div{
+display: grid;
+font-size: small;
+line-height: 15px;
+
+}
+.line{
+background-color: grey;
+width: 78%;
+height: 0.5px;
+margin-top: 50px;
+margin-left: 10%;
+
+}
+#big{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+margin-left: 10%;
+margin-right: 10%;
+
+}
+.small{
+height: 32px;
+width:32px;
+margin-top: 15px;
+}
+.txt{
+justify-content: center;
+align-content: center; 
+}
+
+#email{
+height: 30px;
+border-radius: 5px;
+}
+#btn{
+padding-left: 10px;
+background-color: black;
+color: azure;
+border-radius: 15px;
+height: 30px;
+border: 1px solid white;
+}
+#news{
+justify-content: end;
+align-items: baseline;
+}
+#pri{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+#pri>p{
+padding-left: 15px;
+}
+#last{
+display: flex;
+flex-wrap: wrap;
+}
+.social{
+height: 40px;
+width: 40px;
+}
+#soc{
+padding-left: 200px;
+}
