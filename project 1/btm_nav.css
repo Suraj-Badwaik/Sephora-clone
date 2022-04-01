@@ -3,6 +3,7 @@
     padding-top: 50px;
     background-color: black;
     color: azure;
+    padding-bottom: 60px;
 }
 .btm{
 color: azure;
@@ -33,14 +34,17 @@ margin-left: 10%;
 margin-right: 10%;
 
 }
-.small{
-height: 32px;
-width:32px;
-margin-top: 15px;
-}
+
 .txt{
-justify-content: center;
-align-content: center; 
+margin-top: 10px;
+display: flex;
+justify-content: left;
+align-items: center; 
+}
+.txt>img{
+width: 30px; 
+height: 30px;
+margin-right: 10px;
 }
 
 #email{
@@ -48,17 +52,28 @@ height: 30px;
 border-radius: 5px;
 }
 #btn{
-padding-left: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
 background-color: black;
 color: azure;
 border-radius: 15px;
-height: 30px;
-border: 1px solid white;
+border: 2px solid white;
 }
-#news{
-justify-content: end;
-align-items: baseline;
+#newsflex{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
+#news>div{
+    margin-top: 8px;
+    display: flex;
+}
+
+#news>div>input{
+    width: 60%;
+    margin-right: 10px;
+}
+
 #pri{
 display: flex;
 flex-wrap: wrap;
@@ -66,16 +81,26 @@ flex-wrap: wrap;
 
 }
 #pri>p{
-padding-left: 15px;
+    font-size: 12px;
+
 }
 #last{
 display: flex;
 flex-wrap: wrap;
 }
+
+#last>div>p{
+font-size: 13px;
+}
 .social{
-height: 40px;
-width: 40px;
+height: 30px;
+width: 30px;
 }
 #soc{
-padding-left: 200px;
+margin-left: 34%;
+}
+
+.one>p{
+    font-size: 12px;
+    line-height: 20px;
 }
