@@ -1,0 +1,118 @@
+*{
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+#signin>a{
+ text-decoration: none;
+ display: flex;
+ flex-wrap: wrap;
+ color: black;
+}
+#signin>a>img{
+    width: 40px;
+    height: 40px;
+}
+#signin>a>p{
+    padding-left: 10px;
+}
+#top_img{
+background-color: #E00585;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 0 0;
+padding-left: 50px;
+padding-right: 50px;
+}
+#top_img>p{
+font-family: "helvetica neue", helvetica, arial, sans-serif;
+float: left;
+color: white;
+text-align: center;
+font-size: small;
+
+}
+#top_img>img{
+float: right;
+}
+#search{
+display: flex;
+flex-wrap: wrap;
+margin-left: 8%;
+margin-right: 8%;
+padding-left: 25px;
+height: auto;
+}
+#logo{
+margin-top: 25px;
+height: 50px;
+width: 100px;
+}
+div>input{
+width: 350px;
+height: 30px;
+border-radius: 15px;
+border: none;
+background-color: #F6F6F8;
+color: black;
+}
+.icon{
+margin-top: 20px;
+padding-left: 35px;
+background: url("https://cdn-icons-png.flaticon.com/512/54/54481.png") no-repeat left;
+padding: auto;
+background-color: #f6f6f6;
+background-size: 20px;
+}
+#search>div{
+padding-left: 25px;
+}
+#community{
+display: flex;
+flex-wrap: wrap;
+
+}
+#community>div{
+align-items: center;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+padding-left: 15px;
+}
+#community>div>p{
+text-align: center;
+font-size: small;
+float: left;
+padding-left: 15px;
+
+}
+#community>div>img{
+padding-left: 20px;
+}
+#cart{
+
+margin-left: 80px;
+}
+#cart>div{
+display: flex;
+flex-wrap: wrap;
+}
+#cart>div>a>img{
+padding-left: 15px;
+}
+#black_nav{
+display: flex;
+flex-wrap: wrap;
+background-color: black;
+color: white;
+padding-left: 11%;
+height: 50px;
+text-align: center;
+align-items: center;
+}#black_nav>div{
+padding-left:30px ;
+}
+#black_nav>div>a{
+text-decoration: none;
+color: azure;
+}
