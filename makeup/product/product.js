@@ -1,22 +1,37 @@
-var cName=document.createElement("h1");
-cName.innerText="Dior";
-var pName=document.createElement("h2");
-pName.innerText="Dior Airflash Spray Foundation";
-var pPrice=document.createElement("p");
-pPrice.innerText="$62.00"
+var cartdata=[
+  {
+      image:"https://www.sephora.com/productimages/sku/s2050391-main-zoom.jpg?imwidth=97",
+      brand:"Dior",
+      itemname:"Dior Airflash Spray Foundation",
+      size: "size 2.3 oz/ 70 ml",
+      color:"1 cool (104)",
+      price: "$62"
+  }
+]
 
-document.querySelector("#page1").append(cName, pName, pPrice);
+var editcartData=JSON.parse(localStorage.getItem("cartDataObj"))||[];
 
-var cColor=document.createElement("h2");
-cColor.innerText="Color: 6 Neutral (600) - Deep tanned skin, neutral undertones";
-var pSize=document.createElement("p");
-pSize.innerText="Size 2.3 oz/ 70 mL";
-var radiant=document.createElement("p");
-radiant.innerText="Radiant finish - Standard size"
+cartdata.map(function (elem){
 
-var topDiv=document.createElement("div");
-topDiv.className="top-div";
-var imgArr1=["https://www.sephora.com/productimages/sku/s2050391+sw.jpg","https://www.sephora.com/productimages/sku/s2050375+sw.jpg","https://www.sephora.com/productimages/sku/s2050383+sw.jpg","https://www.sephora.com/productimages/sku/s2050425+sw.jpg","https://www.sephora.com/productimages/sku/s2050409+sw.jpg","https://www.sephora.com/productimages/sku/s2050417+sw.jpg","https://www.sephora.com/productimages/sku/s2050433+sw.jpg","https://www.sephora.com/productimages/sku/s2050508+sw.jpg","https://www.sephora.com/productimages/sku/s2050482+sw.jpg","https://www.sephora.com/productimages/sku/s2050466+sw.jpg","https://www.sephora.com/productimages/sku/s2050441+sw.jpg","https://www.sephora.com/productimages/sku/s2050458+sw.jpg","https://www.sephora.com/productimages/sku/s2050490+sw.jpg","https://www.sephora.com/productimages/sku/s2050516+sw.jpg","https://www.sephora.com/productimages/sku/s2050524+sw.jpg","https://www.sephora.com/productimages/sku/s2050532+sw.jpg","https://www.sephora.com/productimages/sku/s2050540+sw.jpg"];
+  var cName=document.createElement("h1");
+  cName.innerText=elem.brand;
+  var pName=document.createElement("h2");
+  pName.innerText=elem.itemname;
+  var pPrice=document.createElement("p");
+  pPrice.innerText=elem.price;
+  document.querySelector("#page1").append(cName, pName, pPrice);
+  
+  var cColor=document.createElement("h2");
+  cColor.innerText=elem.color;
+  var pSize=document.createElement("p");
+  pSize.innerText=elem.size;
+  var radiant=document.createElement("p");
+  radiant.innerText="Radiant finish - Standard size"
+  
+  var topDiv=document.createElement("div");
+  topDiv.className="top-div";
+
+  var imgArr1=["https://www.sephora.com/productimages/sku/s2050391+sw.jpg","https://www.sephora.com/productimages/sku/s2050375+sw.jpg","https://www.sephora.com/productimages/sku/s2050383+sw.jpg","https://www.sephora.com/productimages/sku/s2050425+sw.jpg","https://www.sephora.com/productimages/sku/s2050409+sw.jpg","https://www.sephora.com/productimages/sku/s2050417+sw.jpg","https://www.sephora.com/productimages/sku/s2050433+sw.jpg","https://www.sephora.com/productimages/sku/s2050508+sw.jpg","https://www.sephora.com/productimages/sku/s2050482+sw.jpg","https://www.sephora.com/productimages/sku/s2050466+sw.jpg","https://www.sephora.com/productimages/sku/s2050441+sw.jpg","https://www.sephora.com/productimages/sku/s2050458+sw.jpg","https://www.sephora.com/productimages/sku/s2050490+sw.jpg","https://www.sephora.com/productimages/sku/s2050516+sw.jpg","https://www.sephora.com/productimages/sku/s2050524+sw.jpg","https://www.sephora.com/productimages/sku/s2050532+sw.jpg","https://www.sephora.com/productimages/sku/s2050540+sw.jpg"];
 
 
 imgArr1.map(function (elem){
@@ -34,16 +49,28 @@ var imgArr2=["https://www.sephora.com/productimages/sku/s2224830+sw.jpg","https:
 
 
 imgArr2.map(function (elem){
-    var img=document.createElement("img");
-    img.src=elem
-    bottomDiv.append(img);
+  var img=document.createElement("img");
+  img.src=elem
+  bottomDiv.append(img);
 })
 var h2=document.createElement("p");
 h2.innerText="Find Your Shade";
 h2.style.color="blue";
 h2.style.fontSize="15px"
 
+document.querySelector(".btn").addEventListener("click",function(){
+  addToCart(elem);
+})
+
+
 document.querySelector("#page2").append(cColor, pSize, radiant, topDiv, matte, bottomDiv, h2);
+})
+
+function addToCart(elem){
+  console.log(elem);
+  editcartData.push(elem);
+  localStorage.setItem("cartDataObj", JSON.stringify(editcartData));
+}
 
 var text=document.createElement("h2");
 text.innerText="Get It Shipped";
