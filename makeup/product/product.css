@@ -1,18 +1,26 @@
 *{
+    margin: 0px;
     font-family: "helvetica neue", Arial, Helvetica, sans-serif;
 }
+.firstProduct{
+    width: 80%;
+    margin: auto;
+}
 #main{
+    margin-top: 20px;
     display: flex;
     color: gray;
 }
 #main > div{
+    
     margin-left: 1px;
-    font-size: 14px;
+    font-size: 12px;
 }
 i{
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 3px;
     font-size: 11px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 #second-div{
     display: flex;
@@ -43,27 +51,30 @@ i{
     width: 47%;
 }
 #page1 h1{
-    font-size: 18px;
+    font-size: 14px;
 }
 #page1 h2{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
-    margin-top: -15px;
+    /* margin-top: -15px; */
 }
 #page1 p{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 8px;
 }
 #page2{
-    font-size: 18px;
+    font-size: 30px;
+    line-height: 25px;
+    /* border: 2px solid red; */
 }
 #page2 h2{
-    font-size: 17px;
+    font-size: 14px;
+    margin-top: 5px;
     font-weight: lighter;
 }
 #page2 p{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: lighter;
 }
 #page2 img{
@@ -95,13 +106,15 @@ i{
     background-color: #e9e9e9;
     padding-left: 15px;
     padding-top: 1px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bolder;
     height: 90px;
     margin-bottom: 10px;
 }
 #page3 h2, #page4 h2{
+    margin-top: 10px;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 #page3 input, #page4 input{
     margin-top: 0px;
@@ -112,7 +125,7 @@ input[type="radio"]{
     margin: 10px;
 }
 #page3 span{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     margin-left: 10px   ;
 }
@@ -156,7 +169,7 @@ select{
 /* img scrollbar section */
 section{
   position: relative;  
-  height: 610px;
+  height: auto;
   width: 100%;
   display: flex;
 }
