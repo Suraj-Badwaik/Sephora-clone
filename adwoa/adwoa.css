@@ -1,20 +1,24 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 10px;
+  margin: 0px;
 }
 #menu {
   /* border: 1px solid red; */
   width: 250px;
-  margin-left: 100px;
+  line-height: 50px;
 }
 #outer {
   /* border: 1px solid blue; */
+ padding-top: 30px;
+  width: 80%;
   display: flex;
+  margin: auto;
 }
 #container {
   /* border: 1px solid red; */
+  margin-top: 30px;
   margin-left: 60px;
-  width: 70%;
+  width: 80%;
   /* box-sizing: border-box; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
