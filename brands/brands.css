@@ -1,0 +1,44 @@
+#scale{
+    height: 70px;
+    display: flex;
+    border-bottom: 0.5px solid gray
+    
+}
+.alpha{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#main{
+    display: grid;
+    height: auto;
+}
+#main .maininer{
+    height: auto;
+    display: flex;
+    border-bottom: 0.5px solid gray;
+}
+/* #main .maininer > div{
+    border: 1px solid yellow;
+} */
+#main .maininer > div:nth-child(1){
+    width: 15%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#main .maininer > div:nth-child(2){
+   width: 85%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 10px;
+   font-size: 20px;
+   margin-top: 30px;
+    margin-bottom: 30px;
+}
