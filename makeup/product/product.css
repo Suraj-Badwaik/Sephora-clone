@@ -1,0 +1,192 @@
+*{
+    font-family: "helvetica neue", Arial, Helvetica, sans-serif;
+}
+#main{
+    display: flex;
+    color: gray;
+}
+#main > div{
+    margin-left: 1px;
+    font-size: 14px;
+}
+i{
+    margin-left: 10px;
+    font-size: 11px;
+    margin-top: 5px;
+}
+#second-div{
+    display: flex;
+    margin: 30px 0px 10px 10px;
+}
+#div1{
+    border: 1px solid white;
+    width: 6%;
+    margin-right: 2%;
+}
+#div1 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#div1 img:hover{
+    border: 2.5px solid grey;
+}
+#div2{
+    border: 1px solid white;
+    width: 36%;
+    margin-right: 6%;
+}
+#div3{
+    border: 1px solid white;
+    width: 47%;
+}
+#page1 h1{
+    font-size: 18px;
+}
+#page1 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -15px;
+}
+#page1 p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+}
+#page2{
+    font-size: 18px;
+}
+#page2 h2{
+    font-size: 17px;
+    font-weight: lighter;
+}
+#page2 p{
+    font-size: 13px;
+    font-weight: lighter;
+}
+#page2 img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 2px;
+}
+#page2 img:hover{
+   border: 2px solid gray;
+   width: 33px;
+   height: 33px;
+}
+.top-div{
+    margin-top: -20;
+    display: flex;
+    flex-wrap: wrap;
+}
+#page3{
+    background-color: #e9e9e9;
+    padding-left: 15px;
+    padding-top: 1px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 120px;
+    margin-bottom: 10px;
+}
+#page4{
+    background-color: #e9e9e9;
+    padding-left: 15px;
+    padding-top: 1px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 90px;
+    margin-bottom: 10px;
+}
+#page3 h2, #page4 h2{
+    font-size: 15px;
+}
+#page3 input, #page4 input{
+    margin-top: 0px;
+}
+input[type="radio"]{
+    height: 20px;
+    width: 30px;
+    margin: 10px;
+}
+#page3 span{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 10px   ;
+}
+#page4 span{
+    font-weight: lighter;
+}
+.color{
+    color: red;
+    font-weight: bold;
+}
+select{
+    background-color: #CF112C;
+    height: 50px;
+    width: 70px;
+    border: 1px solid #CF112C;
+    border-radius: 30px 0px 0px 30px;
+    color: white;
+    padding-left: 13px;
+    font-size: 18px;
+
+}
+.btn{
+    background-color: #CF112C;
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+    border: 1px solid #CF112C;
+    border-radius: 0px 40px 40px 0px;
+    color: white;
+    cursor: pointer;
+    margin-left: 12%;
+    text-align: center;
+}
+.btn span{
+    font-size: 17px;
+}
+.selection{
+    position: absolute;
+}
+
+/* img scrollbar section */
+section{
+  position: relative;  
+  height: 610px;
+  width: 100%;
+  display: flex;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 00;
+}
+
+section .image{
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #fff;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: gray;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: black;
+}
