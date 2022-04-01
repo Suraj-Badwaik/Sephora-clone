@@ -1,11 +1,11 @@
 var mensData = [
-  {
-    image_url:
-      "https://www.sephora.com/contentimages/brands/adwoabeauty/adwoa-beauty-brand-tile-460x772px.jpg",
-    name: "",
-    price: "",
-    strikedoffprice: "",
-  },
+  // {
+  //   image_url:
+  //     "https://www.sephora.com/contentimages/brands/adwoabeauty/adwoa-beauty-brand-tile-460x772px.jpg",
+  //   name: "",
+  //   price: "",
+  //   strikedoffprice: "",
+  // },
   {
     image_url:
       "https://www.sephora.com/productimages/sku/s2466761-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=230",
@@ -87,7 +87,7 @@ var mensData = [
 
 var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
-mensData.map(function (elem) {
+mensData.map(function (elem, index) {
   var box = document.createElement("div");
 
   var img = document.createElement("img");
@@ -99,11 +99,18 @@ mensData.map(function (elem) {
   var price = document.createElement("p");
   price.innerText = elem.price;
 
+  // console.log(index);
+
+  // var heart = document.createElement("img");
+  // heart.src =
+  //   "https:www.sephora.com/contentimages/brands/adwoabeauty/adwoa-beauty-brand-tile-460x772px.jpg";
+
   var btn = document.createElement("button");
   btn.innerText = "Add to cart";
   btn.addEventListener("click", function () {
     addToCart(elem);
   });
+
   box.append(img, name, price, btn);
 
   document.querySelector("#container").append(box);
