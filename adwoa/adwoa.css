@@ -9,6 +9,7 @@
 #outer {
   /* border: 1px solid blue; */
   display: flex;
+  margin-top: 40px;
 }
 #container {
   /* border: 1px solid red; */

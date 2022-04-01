@@ -16,7 +16,7 @@
 }
 #top_img{
 background-color: #E00585;
-width: 100%;
+width: auto;
 display: flex;
 justify-content: center;
 align-items: center;

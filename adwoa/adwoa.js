@@ -106,7 +106,7 @@ mensData.map(function (elem, index) {
   //   "https:www.sephora.com/contentimages/brands/adwoabeauty/adwoa-beauty-brand-tile-460x772px.jpg";
 
   var btn = document.createElement("button");
-  btn.innerText = "Add to cart";
+  btn.innerText = "Add to Basket";
   btn.addEventListener("click", function () {
     addToCart(elem);
   });

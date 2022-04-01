@@ -1,4 +1,5 @@
-body{
+#body{
+    margin-top: 40px;
     padding-top: 50px;
     background-color: black;
     color: azure;
