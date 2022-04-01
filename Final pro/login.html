@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    
+  </head>
+
+  <body>
+
+    <main>
+      <form id="form">
+        <h4>Sign in to Sephora</h4>
+        <input id="email" placeholder="Email address*" type="email"/><br>
+        <input id="pass" placeholder="Password*" type="password"/>
+        <input id="check" type="checkbox" value="Keep me signed in"/>
+        <label for="keep me signed in">Keep me signed in</label>
+        <a href="google.com">Forgot password?</a><br>
+        <button id="b1">Sign in</button>
+        <hr>
+        <h4>New to Sephora?</h4>
+        <button id="b2">Create Account</button>
+        <p><a href="google.com">Tearm of Use & Privacy Policy</a></p>
+      </form>
+    </main>
+  </body>
+  <script>
+    document.querySelector("form").addEventListener("submit", loginFunction)
+
+var Ruser =JSON.parse(localStorage.getItem("Info")) || [];
+function loginFunction(){
+  event.preventDefault();
+  var enterdemail= document.querySelector("#email").value;
+  var enterdpassword= document.querySelector("#pass").value;
+for( var i=0;i<Ruser.length;i++){
+ // console.log(Ruser[i]);
+
+  if(
+  Ruser[i].emailId==enterdemail &&
+  Ruser[i].password==enterdpassword
+)
+
+{
+  alert("Login successful");
+  window.location.href="https://course.masaischool.com/lectures/25833"
+  return false;
+}
+else{
+  alert("Login Failed");
+} 
+}
+ 
+  }
+  
+
+  </script>
+</html>

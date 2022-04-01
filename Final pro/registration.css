@@ -1,0 +1,98 @@
+
+*{
+      font-family: Helvetica;
+      margin-left: 4px;
+  }
+  #form{
+    display: flexbox;
+    width: 450px;
+    margin: auto;
+   
+  }
+  p{
+      font-size: 14px;
+  }
+  #h{
+      text-align: center;
+  }
+  #im{
+      height: 50px;
+      width: 35%;
+  }
+  #im1{
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-top: -11px;
+    margin-right: 10px;
+  }
+  #name{
+border-radius: 5px;
+height: 25px;
+width: 43%;
+padding: 10px;
+margin-bottom: 20px;
+border-width: 1px;
+border-color: gray;
+}
+#Lname{
+border-radius: 5px;
+height: 25px;
+width: 43%;
+padding: 10px;
+margin-bottom: 20px;
+border-width: 1px;
+border-color: gray;
+margin-left: 10px;
+
+}
+.epp{
+border-radius: 5px;
+height: 25px;
+width: 94%;
+padding: 10px;
+margin-bottom: 20px;
+border-width: 1px;
+border-color: gray;
+}
+#s1{
+border-radius: 5px;
+height: 43px;
+width: 47%;
+padding: 10px;
+margin-bottom: 20px;
+border-width: 1px;
+border-color: gray;
+}
+#s2{
+border-radius: 5px;
+height: 43px;
+width: 47%;
+padding: 10px;
+margin-bottom: 20px;
+border-width: 1px;
+border-color: gray;
+margin-left: 14px;
+}
+#hb{
+  margin-top: -10px;
+}
+button{
+  margin-top: 30px;
+ border-radius: 30px;
+ width: 210px;
+ height: 45px;
+ color: white;
+ background-color: black;
+ margin-top: 25px;
+ margin-bottom: 20px;
+ border: none;
+}
+p{
+margin-top: 20px;
+font-size: 12px;
+}
+button:hover{
+background-color: gray;
+ cursor: pointer;
+}
