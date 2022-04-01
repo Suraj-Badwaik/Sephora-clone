@@ -5,7 +5,8 @@ var cartdata=[
       itemname:"Dior Airflash Spray Foundation",
       size: "size 2.3 oz/ 70 ml",
       color:"1 cool (104)",
-      price: "$62"
+      p:"shipping restrictions",
+      price: 62
   }
 ]
 

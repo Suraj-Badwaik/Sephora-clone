@@ -32,6 +32,15 @@ function SubmitFunction(){
    
 }
 
+var fPrice=localStorage.getItem("FinalPrice")
+console.log(fPrice)
+
+document.querySelector("#subtotal").innerText = "$" + fPrice
+    
+    
+    
+    document.querySelector("#total").innerText = "$" + fPrice
+
 
 
 document.querySelector("#apply").addEventListener("click", discountfun);
@@ -70,7 +79,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-  window.location.href="cart.html"
+  window.location.href="../index/index.html"
 }
 
 // When the user clicks anywhere outside of the modal, close it
