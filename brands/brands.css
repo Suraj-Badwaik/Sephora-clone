@@ -1,4 +1,12 @@
+*{
+    margin: 0px;
+}
+.brandsSection{
+    width: 80%;
+    margin: auto;
+}
 #scale{
+ 
     height: 70px;
     display: flex;
     border-bottom: 0.5px solid gray
@@ -9,7 +17,7 @@
     justify-content: center;
     align-items: center;  
     flex: 1;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -27,7 +35,7 @@
 } */
 #main .maininer > div:nth-child(1){
     width: 15%;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
@@ -38,7 +46,7 @@
    display: grid;
    grid-template-columns: repeat(4,1fr);
    gap: 10px;
-   font-size: 20px;
+   font-size: 14px;
    margin-top: 30px;
     margin-bottom: 30px;
 }
