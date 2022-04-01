@@ -1,23 +1,44 @@
-<style>
-      * {
-        font-family: Arial, Helvetica, serif;
-      }
-      #menu {
-        border: 1px solid red;
-        width: 200px;
-        margin-left: 150px;
-      }
-      #outer {
-        border: 1px solid blue;
-        display: flex;
-      }
-      #container {
-        border: 1px solid red;
-        margin-left: 60px;
-        width: 70%;
-        /* box-sizing: border-box; */
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
-    </style>
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menu {
+  border: 1px solid red;
+  width: 200px;
+  margin-left: 150px;
+}
+#outer {
+  border: 1px solid blue;
+  display: flex;
+}
+#container {
+  border: 1px solid red;
+  margin-left: 60px;
+  width: 70%;
+  /* box-sizing: border-box; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+h6:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
+img:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
