@@ -211,6 +211,7 @@ function changePrice(){
     document.querySelector("#total").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
     
     var finalValue = (selectedQuantity*el.price + (total-el.price))
+    console.log(finalValue);
 
     localStorage.setItem("FinalPrice",JSON.stringify(finalValue))
   

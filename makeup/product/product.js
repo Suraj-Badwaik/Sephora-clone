@@ -71,6 +71,8 @@ function addToCart(elem){
   console.log(elem);
   editcartData.push(elem);
   localStorage.setItem("cartDataObj", JSON.stringify(editcartData));
+  alert("Item Added to Basket");
+  window.location="/cartPage/cart.html"
 }
 
 var text=document.createElement("h2");

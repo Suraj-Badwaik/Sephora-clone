@@ -32,7 +32,8 @@ function SubmitFunction(){
    
 }
 
-var fPrice=localStorage.getItem("FinalPrice")
+
+var fPrice = localStorage.getItem("FinalPrice")
 console.log(fPrice)
 
 document.querySelector("#subtotal").innerText = "$" + fPrice
@@ -51,8 +52,8 @@ function discountfun(){
     console.log(code)
 
     if(code== "masai10"){
-    document.querySelector("#subtotal").innerText = "$" + (total-(total*0.10))
-    document.querySelector("#total").innerText = "$" + (total-(total*0.10))
+    document.querySelector("#subtotal").innerText = "$" +(fPrice- (fPrice*0.10))
+    document.querySelector("#total").innerText = "$" + (fPrice- (fPrice*0.10))
     }
 
 }

@@ -32,7 +32,7 @@ h6:hover {
 }
 #main {
   
-  height: 500px;
+  height: auto;
   width: 80%;
   margin: auto;
   text-align: center;
