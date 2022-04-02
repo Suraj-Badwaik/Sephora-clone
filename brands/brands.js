@@ -47,7 +47,7 @@ var scaleArr=["All","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
                 div1.style.cursor="pointer";
                 div1.addEventListener("click", function (){
                     if(index==1 && elem=="Adwoa beauty"){
-                        window.location.href="adwoa/adwoa.html";
+                        window.location.href="../adwoa/adwoa.html";
                         // D:\Masai school\Project sophera\adwoa\adwoa.html
                     }
                 })

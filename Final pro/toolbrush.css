@@ -1,4 +1,4 @@
-
+/* 
 *{
     font-family: Helvetica;
     margin-left: 10px;
@@ -52,6 +52,79 @@ div:hover{
 #prod>div>img{
     float: right;
     margin-top: -38px;
+}
+.bimg{
+    height: 30px;
+    width: 30px;
+} */
+
+
+
+
+
+*{
+    font-family: Helvetica;
+    margin: 0;
+}
+hr{
+    height: 1px;
+    background-color: rgb(226, 221, 221);
+    border: none;
+}
+#Container{
+    display: flex;
+    font-size: 14px;
+}
+
+#Container>div{
+    line-height: 30px;
+    margin-top: 10px;
+}
+#prod{
+    margin-top: 40px;
+    margin-left:-20px;
+    display: grid;
+    grid-auto-flow: row;
+    height: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 7px 7px;
+}
+#prod>div{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
+        width: 200px;
+        padding: 5px;
+        margin-left: -2px;
+        justify-items: center;
+}
+
+#hairBody{
+    width: 80%;
+    margin: auto;
+}
+#item{
+    margin-top: 400px;
+    margin-left: 30px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    line-height: 15px;
+    
+}
+select{
+    width: 200px;
+    margin: 10px;
+    font-weight: bold;
+    border: none;
+}
+#hairBody:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#prod>div>img{
+    float: right;
+    margin-top: -18px;
 }
 .bimg{
     height: 30px;

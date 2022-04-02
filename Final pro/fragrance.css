@@ -56,7 +56,7 @@ select{
     font-weight: bold;
     border: none;
 }
-div:hover{
+#fragranceBody:hover{
     cursor: pointer;
     text-decoration: underline;
 }

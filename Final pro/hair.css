@@ -1,7 +1,7 @@
 
 *{
     font-family: Helvetica;
-    margin-left: 10px;
+    margin: 0;
 }
 hr{
     height: 1px;
@@ -11,6 +11,11 @@ hr{
 #Container{
     display: flex;
     font-size: 14px;
+}
+
+#Container>div{
+    line-height: 30px;
+    margin-top: 10px;
 }
 #prod{
     margin-top: 40px;
@@ -30,9 +35,14 @@ hr{
         margin-left: -2px;
         justify-items: center;
 }
+
+#hairBody{
+    width: 80%;
+    margin: auto;
+}
 #item{
-    margin-top: -760px;
-    margin-left: 230px;
+    margin-top: -600px;
+    margin-left: 260px;
     width: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -45,13 +55,13 @@ select{
     font-weight: bold;
     border: none;
 }
-div:hover{
+#hairBody:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 #prod>div>img{
     float: right;
-    margin-top: -38px;
+    margin-top: -18px;
 }
 .bimg{
     height: 30px;
