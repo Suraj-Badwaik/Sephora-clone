@@ -66,8 +66,14 @@ flex-direction: column;
 justify-content: space-between;
 }
 
-#newsflex{
-margin-top: 20px;
+/* #newsflex{
+
+border: 1px solid white;
+width: 100%;
+} */
+
+#newsflex>h1{
+text-align: left;
 }
 #news>div{
     margin-top: 8px;
