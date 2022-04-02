@@ -3,35 +3,36 @@
         margin-left: 3px;
 
       }
+      .formHead{
+        margin-bottom: 20px;
+      }
       #form{
-          display: flexbox;
-          width: 500px;
-          margin: auto;
+        display: flexbox;
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
         }
       #email{
       border-radius: 5px;
-      height: 25px;
       width: 94%;
-      padding: 10px;
+      padding: 25px 20px;
       margin-bottom: 20px;
-      border-width: 1px;
-      border-color: gray;
+      border: 2px solid rgb(217, 216, 216);
       }
       #pass{
       border-radius: 5px;
-      height: 25px;
       width: 94%;
-      padding: 10px;
+      padding: 20px 20px;
       margin-bottom: 20px;
-      border-width: 1px;
-      border-color: gray;
+      border: 2px solid rgb(217, 216, 216);
      
      }
-     #check{
-       margin-top: -100px;
-       font-family: 60px;
-    
+
+     .formFoot{
+       margin-top: 20px;
+       margin-bottom: 20px;
      }
+    
      #b1{
        margin-top: 30px;
        border-radius: 30px;
@@ -44,31 +45,41 @@
        border: none;
       }
      #b2{
-       margin-top: 30px;
+       text-align: center;
+       /* margin-top: 30px; */
        border-radius: 30px;
-       width: 210px;
-       height: 45px;
-       margin-top: -90px;
-       background-color: #f6f6f8; 
+       padding: 12px 57px;
+       /* margin-top: -90px; */
+       background-color: white; 
        margin-top: 4px;
        border-color: black;
      }
-     #b2:hover{
-       cursor: pointer;
+     #b2>a{
+       text-decoration: none;
+       font-weight: bold;
+       color: black;
+      font-size: 14px;
+     }
+     #b2>a:hover{
        color: gray;
+     }
+     #b2:hover{     
+       cursor: pointer;
+       background-color: rgb(215, 214, 214);
      }
      #b1:hover{
        cursor: pointer;
-       background-color: gray;
+       background-color: rgb(210, 207, 207);
      }
+    #forget{
+      float: right;
+    }
     
-     a{
-       margin-left: 200px;
-      }
       hr{
        color: gray;
       }
-      p{
+      #form>p{
+        text-align: center;
         margin-top: 80px;
         font-size: 12px;
       }

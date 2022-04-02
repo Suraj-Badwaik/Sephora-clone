@@ -1,0 +1,73 @@
+        *{
+            font-family: Helvetica;
+        }
+        form{
+          display: flexbox;
+          width: 500px;
+          margin: auto;
+        }
+        #immm{
+            height: 50px;
+            width: 50px;
+            float: left;
+            margin-right: 16px;
+            margin-top: -10px;
+        }
+        p{            
+            font-size: 12px;
+            margin-top: -18px;
+            color: gray;
+
+        }
+        button{
+            height: 30px;
+            width: 48%;
+            border-radius: 50px;
+            border-color:black;
+        }
+        #bcg{
+        background-color: black;
+        color: white;
+        margin: 5px;
+        border: none;
+        }
+        #im{
+            height: 60px;
+            width: 60px;
+            float: right;
+            margin-top: -55px;
+        }
+        .imm{
+            float: left;
+            margin-right: 14px;
+        }
+        h5:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        div:hover{
+            cursor: pointer;
+        }
+        div{
+            color: gray;
+           
+        }
+        #lin{
+           background-color:#f6f6f8;
+           border: none;
+           height: 8px;
+        }
+        hr{
+           background-color:#f6f6f8;
+           border: none;
+           height: 1px;
+        }
+
+        #bcg:hover{
+            border-color: gray;
+            background-color: gray;
+            cursor: pointer;
+        }
+        button:hover{
+            color: gray;
+        }

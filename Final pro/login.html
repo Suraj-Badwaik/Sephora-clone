@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./login.css">
-    
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="../cartPage/popup.css">
 
-    <main>
-      <form id="form">
-        <h4>Sign in to Sephora</h4>
-        <input id="email" placeholder="Email address*" type="email"/><br>
-        <input id="pass" placeholder="Password*" type="password"/>
-        <input id="check" type="checkbox" value="Keep me signed in"/>
-        <label for="keep me signed in">Keep me signed in</label>
-        <a href="google.com">Forgot password?</a><br>
-        <button id="b1">Sign in</button>
-        <hr>
-        <h4>New to Sephora?</h4>
-        <button id="b2">Create Account</button>
-        <p><a href="google.com">Tearm of Use & Privacy Policy</a></p>
-      </form>
-    </main>
-  </body>
-  <script>
-    document.querySelector("form").addEventListener("submit", loginFunction)
+</head>
 
-var Ruser =JSON.parse(localStorage.getItem("Info")) || [];
-function loginFunction(){
-  event.preventDefault();
-  var enterdemail= document.querySelector("#email").value;
-  var enterdpassword= document.querySelector("#pass").value;
-for( var i=0;i<Ruser.length;i++){
- // console.log(Ruser[i]);
+<body>
+  <!-- POPUP SCREEN -->
 
-  if(
-  Ruser[i].emailId==enterdemail &&
-  Ruser[i].password==enterdpassword
-)
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-{
-  alert("Login successful");
-  window.location.href="https://course.masaischool.com/lectures/25833"
-  return false;
-}
-else{
-  alert("Login Failed");
-} 
-}
- 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>You're Order Has Been Successfully Placed</p>
+      <main>
+        <form id="form">
+          <h4>Sign in to Sephora</h4>
+          <input id="email" placeholder="Email address*" type="email" /><br>
+          <input id="pass" placeholder="Password*" type="password" />
+          <input id="check" type="checkbox" value="Keep me signed in" />
+          <label for="keep me signed in">Keep me signed in</label>
+          <a id="forget" href="google.com">Forgot password?</a><br>
+          <button id="b1">Sign in</button>
+          <hr>
+          <h4>New to Sephora?</h4>
+          <button id="b2"><a href="../Final pro/registration.html">Create Account</a></button>
+          <p><a href="google.com">Tearm of Use & Privacy Policy</a></p>
+        </form>
+      </main>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+<script>
+  document.querySelector("form").addEventListener("submit", loginFunction)
+
+  var Ruser = JSON.parse(localStorage.getItem("Info")) || [];
+  function loginFunction() {
+    event.preventDefault();
+    var enterdemail = document.querySelector("#email").value;
+    var enterdpassword = document.querySelector("#pass").value;
+    for (var i = 0; i < Ruser.length; i++) {
+      // console.log(Ruser[i]);
+
+      if (
+        Ruser[i].emailId == enterdemail &&
+        Ruser[i].password == enterdpassword
+      ) {
+        alert("Login successful");
+        window.location.href = "https://course.masaischool.com/lectures/25833"
+        return false;
+      }
+      else {
+        alert("Login Failed");
+      }
+    }
+
   }
-  
 
-  </script>
+
+
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
+
+</script>
+
 </html>

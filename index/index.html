@@ -10,8 +10,40 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="../project 1/top_navBar.css">
   <link rel="stylesheet" href="../project 1/btm_nav.css">
+  <link rel="stylesheet" href="../cartPage/popup.css">
+  <link rel="stylesheet" href="../Final pro/login.css">
 </head>
 <body>
+   <!-- POPUP SCREEN -->
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <main>
+        <form id="form">
+          <h4 class="formHead">Sign in to Sephora</h4>
+          <input id="email" placeholder="Email address*" type="email" /><br>
+          <input id="pass" placeholder="Password*" type="password" /><br>
+          <input id="check" type="checkbox" value="Keep me signed in" />
+          <label for="keep me signed in">Keep me signed in</label>
+          <a id="forget" href="google.com">Forgot password?</a><br>
+          <button id="b1">Sign in</button>
+          <hr>
+          <h4 class="formFoot">New to Sephora?</h4>
+          <button id="b2"><a href="../Final pro/registration.html">Create Account</a></button>
+          <p><a href="google.com">Tearm of Use & Privacy Policy</a></p>
+        </form>
+      </main>
+    </div>
+
+  </div>
+
+
+
+
   <div id="top_img">
     <p><strong>Take 50% off++</strong> Oh snap! Get major savings on your favorite beauty. Plus, free shipping on all
       orders <br> with code <strong> FREESHIP. Shop Now ▸</strong></p>
@@ -454,3 +486,35 @@
 </body>
 
 </html>
+
+
+<script>
+  
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("signin");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  window.location.href="../index/index.html"
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
