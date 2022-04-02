@@ -12,6 +12,7 @@
     height: 40px;
 }
 #signin>a>p{
+    margin-top: 12px;
     padding-left: 10px;
 }
 #top_img{

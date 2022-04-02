@@ -1,7 +1,11 @@
 
 *{
     font-family: Helvetica;
-    margin-left: 10px;
+    margin: 0px;
+}
+#fragranceBody{
+    width: 90%;
+    margin: auto;
 }
 hr{
     height: 1px;
@@ -9,11 +13,17 @@ hr{
     border: none;
 }
 #Container{
+    margin-left: 5%;
     display: flex;
     font-size: 14px;
 }
+
+#Container>div{
+    margin-top: 10px;
+   line-height: 30px;
+}
 #prod{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left:20px;
     display: grid;
     grid-auto-flow: row;
@@ -23,6 +33,7 @@ hr{
     grid-gap: 7px 7px;
 }
 #prod>div{
+    margin-top: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 5px;
         width: 200px;
@@ -31,8 +42,8 @@ hr{
         justify-items: center;
 }
 #item{
-    margin-top: -900px;
-    margin-left: 230px;
+    margin-top: -750px;
+    margin-left: 350px;
     width: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
