@@ -13,7 +13,8 @@ function loginFunction() {
       Ruser[i].password == enterdpassword
     ) {
       alert("Login successful");
-      window.location.href = "https://course.masaischool.com/lectures/25833"
+      // window.location = "hair.html"
+      window.location.href="../index/index.html"
       return false;
     }
     else {
