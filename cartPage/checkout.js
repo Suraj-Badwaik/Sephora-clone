@@ -33,14 +33,20 @@ function SubmitFunction(){
 }
 
 
-var fPrice = localStorage.getItem("FinalPrice")
+var fPrice = JSON.parse(localStorage.getItem("FinalPrice")) || [];
+
 console.log(fPrice)
 
-document.querySelector("#subtotal").innerText = "$" + fPrice
+fPrice.map(function(el){
+  document.querySelector("#subtotal").innerText = "$" + el
+  document.querySelector("#total").innerText = "$" + el
+})
+
+
     
     
     
-    document.querySelector("#total").innerText = "$" + fPrice
+    
 
 
 
@@ -80,7 +86,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-  window.location.href="index.html"
+  window.location.href="/index.html"
 }
 
 // When the user clicks anywhere outside of the modal, close it

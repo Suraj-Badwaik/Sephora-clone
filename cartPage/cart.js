@@ -1,32 +1,4 @@
-// var cartdata=[
-//      {
-//          image:"https://www.sephora.com/productimages/sku/s2050391-main-zoom.jpg?imwidth=97",
-//          brand:"Dior",
-//          itemname:"Dior Airflash Spray Foundation",
-//          size: "size 2.3 oz/ 70 ml",
-//          color:"1 cool (104)",
-//          p:"shipping restrictions",
-//          price: 62
-//      },
-//     {
-//         image:"https://www.sephora.com/productimages/sku/s2050391-main-zoom.jpg?imwidth=97",
-//         brand:"Dior",
-//         itemname:"Dior Airflash Spray Foundation",
-//         size: "size 2.3 oz/ 70 ml",
-//         color:"1 cool (104)",
-//         p:"shipping restrictions",
-//         price: 62
-//     },
-//     {
-//         image:"https://www.sephora.com/productimages/sku/s2050391-main-zoom.jpg?imwidth=97",
-//         brand:"Dior",
-//         itemname:"Dior Airflash Spray Foundation",
-//         size: "size 2.3 oz/ 70 ml",
-//         color:"1 cool (104)",
-//         p:"shipping restrictions",
-//         price: 62
-//     },
-// ]
+
 
 
 
@@ -66,14 +38,15 @@ document.querySelector("#total").innerText = "$" + total
 
 
 
-
+var itmprice=JSON.parse(localStorage.getItem("FinalPrice")) || [];
 
 cartdata.map(function(el,index){
+  
+  if(cartdata.length>=1)
+  {
+    document.querySelector(".cart").innerHTML="";
+  }
 
- if(cartdata.length>=1)
- {
-   document.querySelector(".cart").innerHTML="";
- }
 
 
     // =========================================//
@@ -209,15 +182,18 @@ function changePrice(){
     
     
     document.querySelector("#total").innerText = "$" + (selectedQuantity*el.price + (total-el.price))
+
     
-    var finalValue = (selectedQuantity*el.price + (total-el.price))
+    
+    var finalValue =  selectedQuantity*el.price + (total-el.price)
     console.log(finalValue);
 
-    localStorage.setItem("FinalPrice",JSON.stringify(finalValue))
+    itmprice.push(finalValue)
+
+    localStorage.setItem("FinalPrice",JSON.stringify(itmprice))
   
     
 }
-
 
 })
 
