@@ -80,7 +80,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-  window.location.href="../index/index.html"
+  window.location.href="index.html"
 }
 
 // When the user clicks anywhere outside of the modal, close it

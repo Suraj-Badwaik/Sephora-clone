@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, serif;
+}
+
+#homePage{
+  text-align: center;
+  line-height: 25px;
+}
+.indexhead {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+img {
+  cursor: pointer;
+}
+p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+h6:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#main {
+  
+  height: auto;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#main > div:nth-child(2) {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 220px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.six {
+  /* border: 1px solid green; */
+  height: 170px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+#four {
+  height: 400px;
+}
+
+.six > div {
+  height: 100%;
+  width: 15%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.six > div > h6 {
+  line-height: 10px;
+  margin-top: 5px;
+}
+.six > div > p {
+  line-height: 10px;
+  margin-top: 10px;
+}
+#two > div {
+  width: 49%;
+  justify-content: center;
+}
+#beauty {
+  margin-top: 50px;
+  justify-content: center;
+}
+#button {
+  cursor: pointer;
+  margin: auto;
+  border-radius: 20px;
+  height: 25px;
+  margin-top: 20px;
+  border: 2px solid black;
+  width: 130px;
+  font-size: small;
+  line-height: 20px;
+}
+#four > img {
+  margin: auto;
+}
+#smallfour {
+  margin-bottom: 150px;
+}
+
+#btn{
+  height: 30px;
+
+}
+
+
+#email0{
+  padding: 5px 10px;
+  border-radius: 6px;
+}
