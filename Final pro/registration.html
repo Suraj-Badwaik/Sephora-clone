@@ -73,7 +73,7 @@
       <p class="beautyP">Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more.</p>
       <input id="name" placeholder="First name" type="name" />
       <input id="Lname" placeholder="Last name" type="name" />
-      <input class="epp" placeholder="Email address" type="email" />
+      <input class="epp" id="emailId" placeholder="Email address" type="email" />
       <input class="epp" id="pass" placeholder="password (6 to 12 characters)" type="password" />
       <input class="epp" id="pnumber" placeholder="Phone number (optional)" type="number" />
       <img id="im1" src="https://www.sephora.com/img/ufe/icons/birthday.svg">
@@ -273,7 +273,7 @@
     event.preventDefault();
     var firstName = document.querySelector("#name").value;
     var lastName = document.querySelector("#Lname").value;
-    var email = document.querySelector("#email").value;
+    var email = document.querySelector("#emailId").value;
     var Month = document.querySelector("#s1").value;
     var Day = document.querySelector("#s2").value;
     var password = document.querySelector("#pass").value;
